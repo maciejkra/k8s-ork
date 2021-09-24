@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - demo.134.122.64.99.nip.io
+    - demo.134.122.70.58.nip.io
     secretName: example-tls
   rules:
-  - host: demo.134.122.64.99.nip.io
+  - host: demo.134.122.70.58.nip.io
     http:
       paths:
       - path: /
