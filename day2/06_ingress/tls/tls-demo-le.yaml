@@ -8,16 +8,16 @@ metadata:
 spec:
   tls:
   - hosts:
-    - demo.134.122.70.58.nip.io
+    - demo.164.90.222.130.nip.io
     secretName: example-tls
   rules:
-  - host: demo.134.122.70.58.nip.io
+  - host: demo.164.90.222.130.nip.io
     http:
       paths:
-      - path: /
+      - path: /(.*)
         pathType: Prefix
         backend:
           service:
             name: app-service
             port:
-              number: 80
+              number: 5002
