@@ -1,3 +1,5 @@
+https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+
 ```sh
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
 ```
