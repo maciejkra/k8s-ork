@@ -1,17 +1,17 @@
 # Recreate Python+Redis on Kubernetes
 
 1. Create Deployment yaml file for redis:alpine
-2. Create Deployment yaml file for krajewskim/python-api:redis
-3. Create service yaml file for redis without NodePort (ClusterIP) type
-4. Create service yaml file for python with NodePort type
-5. Set LOG_LEVEL env to DEBUG for python deployment
-6. Set REDIS_HOST env to name of redis service for python deployment
-7. Make sure all ports are correct (REDIS=6379 PYTHON-API=5002)
-8. Use proper labels
-9. Create everything at once with:
+1. Create Deployment yaml file for krajewskim/python-api:redis
+1. Create service yaml file for redis without NodePort (ClusterIP) type. **Don't call it redis**
+1. Create service yaml file for python with NodePort type. **Call it python-service**
+1. Set LOG_LEVEL env to DEBUG for python deployment
+1. Set REDIS_HOST env to name of redis service for python deployment
+1. Make sure all ports are correct (REDIS=6379 PYTHON-API=5002)
+1. Use proper labels
+1. Create everything at once with:
 
 ```sh
-kubectl create -f .
+kubectl apply -f .
 ```
 
 # check everything works 
