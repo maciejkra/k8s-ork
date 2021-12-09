@@ -1,5 +1,5 @@
-1. Create pod with python application from image `krajewskim/python-api:redis`
-2. Port forward and check `/healthz` endpoint (application works on port 5002)
+1. Create pod with python application from image `krajewskim/python-api:new`
+2. Port forward and check `/healthz` & `/docs` endpoint (application works on port 5002)
 3. Check logs
 
 ```sh
