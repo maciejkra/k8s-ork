@@ -1,7 +1,7 @@
 https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
 
 ```sh
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.4.0/aio/deploy/recommended.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.5.0/aio/deploy/recommended.yaml
 ```
 
 create admin-user/rbac
