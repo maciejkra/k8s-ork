@@ -8,15 +8,3 @@ spec:
   containers:
   - name: myapp-container
     image: nginx
-
----
-apiVersion: v1
-kind: Pod
-metadata:
-  name: myapp-pod2
-  labels:
-    app: myapp
-spec:
-  containers:
-  - name: myapp-container
-    image: nginx

@@ -13,7 +13,7 @@ helm template --output-dir=./output --values ./production.values.yaml .
 ```
 
 ```sh
-kubectl create ns mynamespace
+kubectl apply ns mynamespace
 helm install . --generate-name
 helm ls
 

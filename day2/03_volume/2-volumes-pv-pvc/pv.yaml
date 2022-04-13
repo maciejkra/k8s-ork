@@ -16,3 +16,5 @@ spec:
   # it will not be available for mount.
   hostPath:
     path: "/tmp"
+
+# For Windows /mnt/host/c/tmp/
