@@ -1,7 +1,7 @@
 ## Install Loki via Helm
 
 ```
-kubectl apply namespace loki
+kubectl create namespace loki
 ```
 
 Add Loki’s Helm Chart repository:

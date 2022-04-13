@@ -1,19 +1,19 @@
 ```sh
-kubectl apply configmap configuration --from-file=./
+kubectl create configmap configuration --from-file=./
 kubectl get configmap/configuration -o yaml
 ```
 
 # From env file
 ```sh
-kubectl apply configmap fromenv --from-env-file=env-file-example
+kubectl create configmap fromenv --from-env-file=env-file-example
 kubectl get configmap/fromenv -o json
 kubectl get configmap/fromenv -o yaml
 ```
 # Data as file
 
 ```sh
-kubectl apply configmap test-config --from-file=<my-key-name>=<path-to-file>
-kubectl apply configmap test-config --from-file=s.json=service.json
+kubectl create configmap test-config --from-file=<my-key-name>=<path-to-file>
+kubectl create configmap test-config --from-file=s.json=service.json
 kubectl get configmap/test-config -o yaml
 ```
 # Create pods

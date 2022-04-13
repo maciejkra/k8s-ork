@@ -8,7 +8,7 @@ kubectl describe limitrange mem-limit-range
 ```
 
 ```sh
-kubectl apply ns test-1
+kubectl create ns test-1
 kubectl apply -f ns-quota.yaml
 kubectl apply -f deployment.yaml -n test-1
 kubectl scale deployment -n test-1 nginx-readiness --replicas=3

@@ -1,5 +1,5 @@
 ```sh
-kubectl apply ns workshops
+kubectl create ns workshops
 kubectl apply -f replica-set.yaml
 kubectl get all -n workshops
 kubectl -n workshops describe rs replicate-my-app

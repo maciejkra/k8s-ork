@@ -1,6 +1,6 @@
 ```sh
 kubectl get namespaces
-kubectl apply namespace workshops
+kubectl create namespace workshops
 ```
 
 1. Create new replica set in this namespace
