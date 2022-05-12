@@ -2,8 +2,7 @@
 
 ```sh
 kubectl apply -f deployment.yaml
-kubectl get rs
-kubectl get pods
+kubectl get all
 kubectl scale deployment/nginx-deployment --replicas=0
 kubectl get pods
 ```

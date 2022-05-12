@@ -1,8 +1,6 @@
 ```sh
 kubectl create ns workshops
-kubectl apply -f replica-set.yaml
+kubectl apply -f deployment.yaml
 kubectl get all -n workshops
-kubectl -n workshops describe rs replicate-my-app
-PO=$(kubectl -n workshops get pods -l app=workshops-myapp -o jsonpath='{.items[0].metadata.name}')
-kubectl -n workshops describe pod/$PO 
+kubectl -n workshops describe deployment replicate-my-app
 ```
