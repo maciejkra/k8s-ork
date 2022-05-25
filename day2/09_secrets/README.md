@@ -4,7 +4,7 @@ https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-regi
 
 
 ```sh
-kubectl apply secret generic my-secret --from-file=./my-secrets --from-literal=user=marcin
+kubectl create secret generic my-secret --from-file=./my-secrets --from-literal=user=marcin
 kubectl get secret my-secret -o yaml
 kubectl apply -f pod-secret.yaml
 kubectl logs secret-pod | grep USER
