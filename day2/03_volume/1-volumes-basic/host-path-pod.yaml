@@ -5,10 +5,12 @@ metadata:
   labels:
     name: host-path-pod
 spec:
+  nodeSelector:
+    kubernetes.io/hostname: workshop-worker
   volumes:
   - name: host-path
     hostPath:
-      path: /tmp
+      path: /files
   containers:
   - name: host-path-pod-bb
     image: busybox
