@@ -18,3 +18,4 @@ CronJob can easly lock your node
 
 K8S CronJob vs Application with internal scheduler
 
+https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/

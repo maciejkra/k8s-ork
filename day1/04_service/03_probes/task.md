@@ -1,1 +1,0 @@
-Add readyness & liveness probe to python service

@@ -18,7 +18,7 @@ metadata:
     app: stsf
 spec:
   serviceName: stsf-service
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: stsf
@@ -45,7 +45,6 @@ spec:
     spec:
       accessModes:
       - ReadWriteOnce
-      storageClassName: pk-sc
       resources:
         requests:
           storage: 1Gi

@@ -23,7 +23,7 @@ spec:
     command: ['sh', '-c', 'echo running! && sleep 3600']
     volumeMounts:
     - name: cm
-      mountPath: /usr/bin/appsettings.json # only key specified here will be taken
+      mountPath: /etc/appsettings.json # only key specified here will be taken
       subPath: appsettings.json # updating by cm change does not work
     resources:
       limits:

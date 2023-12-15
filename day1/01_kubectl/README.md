@@ -15,3 +15,11 @@ Really verbose
 ```sh
 kubectl get pods -v=9
 ```
+
+## Useful stull
+
+Instal konfig plugin and import configuration
+```sh
+kubectl krew install konfig
+kubectl konfig import -s <file>
+```

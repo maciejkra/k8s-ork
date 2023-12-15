@@ -6,3 +6,6 @@ kubectl get job
 kubectl logs -f -l type=consumer
 ```
 
+## Useful Links
+
+https://kubernetes.io/docs/concepts/workloads/controllers/job/
