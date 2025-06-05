@@ -46,7 +46,7 @@ kubectl get secrets -n <namespace>
 ## Check values
 ```sh
 helm show values workshop/hello-world # gets information about the chart
-helm get values <release> # gets information about the release
+helm get values <release> -n <namespace> # gets information about the release
 ```
 
 ## Customize values and upgrade
@@ -65,9 +65,9 @@ Get some value from `workshop/hello-world` and update the release - check if it 
 If everything is ok perform rollback with
 
 ```sh
-helm status <release>           # This command shows the status of a named release.
-helm history <release>          # Historical revisions for a given release.
-helm rollback <release> <revision>
+helm status <release> -n <namespace>           # This command shows the status of a named release.
+helm history <release> -n <namespace>         # Historical revisions for a given release.
+helm rollback <release> <revision> -n <namespace>
 ```
 
 
@@ -82,7 +82,7 @@ helm pull workshop/hello-world --untar=true
 
 ## Remove the release
 ```sh
-helm uninstall <release>
+helm uninstall <release> -n <namespace> 
 ```
 
 
